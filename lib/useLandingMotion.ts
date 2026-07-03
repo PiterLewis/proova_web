@@ -142,7 +142,8 @@ export function useLandingMotion() {
           el.style.transform = t;
         }
 
-        if (railT0 !== null) {
+        // La física de perchas solo en escritorio: en ≤920px descansan quietas (CSS las fija).
+        if (railT0 !== null && window.innerWidth > 920) {
           hangs.forEach((h, i) => {
             const t = (now - railT0!) / 1000 - i * 0.14;
             if (t < 0) {

@@ -788,6 +788,21 @@ h1.head em {
     max-width: none;
   }
 }
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 116px;
+  }
+  /* Los sprites parallax se solapan con el móvil en pantallas estrechas: fuera para dejarlo limpio. */
+  .stage .plx {
+    display: none;
+  }
+  .stage {
+    min-height: 0;
+  }
+  .cta-row .store {
+    flex: 1 1 44%;
+  }
+}
 
 /* ---------- MARQUEE ---------- */
 .marquee-sec {
@@ -943,6 +958,28 @@ h1.head em {
   .railx {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+  /* La física de caída de perchas es un lujo de escritorio; en táctil descansan quietas
+     en su barra (si no, el translateY(-220px) inicial solaparía el texto). */
+  .rhang {
+    transform: none !important;
+  }
+}
+@media (max-width: 480px) {
+  .railseg {
+    gap: 2px;
+  }
+  .rhang {
+    width: 92px;
+  }
+  .rhang .rspot {
+    width: 72px;
+  }
+  .rhang.solo .rspot {
+    width: 84px;
+  }
+  .rtext p {
+    max-width: 100%;
   }
 }
 
@@ -1287,10 +1324,13 @@ h1.head em {
 .packstage {
   position: relative;
   height: 430px;
+  /* Acota las prendas en vuelo al escenario (en móvil, si no, se cuelan sobre el botón de arriba). */
+  overflow: hidden;
 }
 @media (max-width: 820px) {
   .packstage {
     height: 380px;
+    margin-top: 14px;
   }
 }
 .pk {

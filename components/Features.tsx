@@ -45,7 +45,7 @@ export function Features() {
             <div className="railbar" />
             <RailItem spot="/assets/spot/tag.svg" title="Última vez" body="Te recuerda cuándo llevaste cada prenda." />
             <RailItem spot="/assets/spot/suitcase.svg" title="Modo viaje" body="Una cápsula que combina, en segundos." />
-            <RailItem spot="/assets/spot/lock.svg" title="Privado por diseño" body="Tu selfie nunca sale de tu móvil." />
+            <RailItem spot="/assets/spot/lock.svg" title="Privado por diseño" body="Tus fotos son tuyas: no las vendemos ni cedemos." />
           </div>
         </div>
       </div>
