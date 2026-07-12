@@ -21,12 +21,12 @@ export default function PrivacidadPage() {
           En <strong>proova</strong> tu privacidad es el punto de partida, no una nota al pie. Esta política explica
           qué datos tratamos, para qué, con quién los compartimos y qué control tienes sobre ellos. Está escrita para
           que se entienda; si algo no queda claro, escríbenos a{" "}
-          <a href="mailto:hola@proova.co">hola@proova.co</a>.
+          <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a>.
         </p>
 
         <div className="callout">
-          <strong>En una frase:</strong> tu foto de cuerpo entero es la base del probador; se procesa cifrada por un
-          proveedor de IA solo para generar tus resultados, y tú mandas: puedes borrarla —y todos tus datos— desde la
+          <strong>En una frase:</strong> tu foto de cuerpo entero es la base del probador; se procesa cifrada con
+          IA solo para generar tus resultados, y tú mandas: puedes borrarla —y todos tus datos— desde la
           app en cualquier momento. No vendemos ni cedemos tus datos.
         </div>
 
@@ -47,7 +47,7 @@ export default function PrivacidadPage() {
         <p>
           El responsable del tratamiento de tus datos es <strong>proova</strong> (el equipo detrás de la aplicación).
           Para cualquier asunto de privacidad puedes contactarnos en{" "}
-          <a href="mailto:hola@proova.co">hola@proova.co</a>.
+          <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a>.
         </p>
 
         <h2 id="datos">2. Qué datos tratamos</h2>
@@ -72,7 +72,7 @@ export default function PrivacidadPage() {
           </li>
           <li>
             Cuando pides un probador, tu <strong>foto de cuerpo entero</strong> y las prendas seleccionadas viajan
-            cifradas a nuestro proveedor de IA para generar la imagen del resultado.
+            cifradas y se procesan con IA para generar la imagen del resultado.
           </li>
           <li>
             <strong>Un identificador anónimo</strong> de tu instalación y datos técnicos mínimos (control de cuota de
@@ -101,10 +101,10 @@ export default function PrivacidadPage() {
 
         <h2 id="terceros">4. Con quién los compartimos</h2>
         <p>
-          Para generar el probador nos apoyamos en un <strong>proveedor de inteligencia artificial de confianza</strong>,
-          que procesa tus imágenes <strong>únicamente</strong> para producir el resultado y bajo un contrato de
-          tratamiento de datos. No vendemos ni cedemos tus datos con fines comerciales. Usamos también proveedores de
-          infraestructura (alojamiento) que actúan como encargados del tratamiento por nuestra cuenta.
+          Para generar el probador, tus imágenes se procesan mediante <strong>inteligencia artificial</strong>,
+          <strong> únicamente</strong> para producir el resultado y bajo contrato de tratamiento de datos. No vendemos
+          ni cedemos tus datos con fines comerciales. Nos apoyamos en proveedores de infraestructura (alojamiento y
+          cómputo) que actúan como encargados del tratamiento por nuestra cuenta.
         </p>
 
         <h2 id="conservacion">5. Cuánto tiempo los conservamos</h2>
@@ -132,7 +132,7 @@ export default function PrivacidadPage() {
             irreversible.
           </li>
           <li>
-            <strong>Acceso y portabilidad:</strong> escríbenos a <a href="mailto:hola@proova.co">hola@proova.co</a> y
+            <strong>Acceso y portabilidad:</strong> escríbenos a <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a> y
             te facilitamos la información asociada a tu instalación.
           </li>
         </ul>
@@ -161,7 +161,7 @@ export default function PrivacidadPage() {
         </p>
 
         <p style={{ marginTop: 34, color: "var(--ink-500)" }}>
-          ¿Dudas sobre tus datos? <a href="mailto:hola@proova.co">hola@proova.co</a>.
+          ¿Dudas sobre tus datos? <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a>.
         </p>
       </article>
     </LegalShell>

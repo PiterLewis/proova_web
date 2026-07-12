@@ -87,7 +87,7 @@ export default function TerminosPage() {
         <p>
           Podemos actualizar estos términos; publicaremos la nueva fecha arriba y, si el cambio es relevante, te
           avisaremos en la app. Para cualquier cuestión, escríbenos a{" "}
-          <a href="mailto:hola@proova.co">hola@proova.co</a>.
+          <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a>.
         </p>
       </article>
     </LegalShell>

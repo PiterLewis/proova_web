@@ -27,8 +27,8 @@ export function SiteFooter() {
           </div>
           <div className="foot-col">
             <h4>Soporte</h4>
-            <a href="mailto:hola@proova.co">Ayuda</a>
-            <a href="mailto:hola@proova.co">Contacto</a>
+            <a href="mailto:dev.proova@gmail.com">Ayuda</a>
+            <a href="mailto:dev.proova@gmail.com">Contacto</a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
               Instagram
             </a>
