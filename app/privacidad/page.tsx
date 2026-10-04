@@ -26,7 +26,7 @@ export default function PrivacidadPage() {
 
         <div className="callout">
           <strong>En una frase:</strong> tu foto de cuerpo entero es la base del probador; se procesa cifrada con
-          IA solo para generar tus resultados, y tú mandas: puedes borrarla —y todos tus datos— desde la
+          Google Cloud solo para generar tus resultados, y tú mandas: puedes borrar tu cuenta —y todos tus datos— desde la
           app en cualquier momento. No vendemos ni cedemos tus datos.
         </div>
 
@@ -72,7 +72,12 @@ export default function PrivacidadPage() {
           </li>
           <li>
             Cuando pides un probador, tu <strong>foto de cuerpo entero</strong> y las prendas seleccionadas viajan
-            cifradas y se procesan con IA para generar la imagen del resultado.
+            cifradas a nuestro proveedor de IA para generar la imagen del resultado (ver{" "}
+            <a href="#terceros">§4</a>).
+          </li>
+          <li>
+            <strong>Las fotos de tus prendas</strong> se envían al mismo proveedor para reconocer de qué prenda se
+            trata (tipo, color, tejido) y poder combinarla. No se usan para nada más.
           </li>
           <li>
             <strong>Un identificador anónimo</strong> de tu instalación y datos técnicos mínimos (control de cuota de
@@ -84,8 +89,11 @@ export default function PrivacidadPage() {
           </li>
         </ul>
         <p>
-          No pedimos tu ubicación, tu agenda ni tu galería salvo que tú actives esas funciones; y los permisos se te
-          piden en el momento, con una explicación de para qué.
+          No pedimos tu agenda ni tu galería salvo que tú actives esas funciones, y los permisos se te piden en el
+          momento con una explicación de para qué. Sobre la <strong>ubicación</strong>: si concedes el permiso, usamos
+          tus coordenadas aproximadas para darte el tiempo de hoy; si lo deniegas, deducimos solo la{" "}
+          <strong>ciudad</strong> a partir de tu dirección IP para el mismo fin. En ningún caso guardamos un historial
+          de tus ubicaciones.
         </p>
 
         <h2 id="fines">3. Para qué usamos tus datos</h2>
@@ -101,10 +109,21 @@ export default function PrivacidadPage() {
 
         <h2 id="terceros">4. Con quién los compartimos</h2>
         <p>
-          Para generar el probador, tus imágenes se procesan mediante <strong>inteligencia artificial</strong>,
-          <strong> únicamente</strong> para producir el resultado y bajo contrato de tratamiento de datos. No vendemos
-          ni cedemos tus datos con fines comerciales. Nos apoyamos en proveedores de infraestructura (alojamiento y
-          cómputo) que actúan como encargados del tratamiento por nuestra cuenta.
+          Tus imágenes —tu foto de cuerpo entero y las fotos de tus prendas— se procesan en{" "}
+          <strong>Google Cloud</strong> (Google Ireland Limited / Google LLC), que actúa como encargado del tratamiento
+          por nuestra cuenta y bajo contrato, <strong>únicamente</strong> para generar tu resultado. Google no las usa
+          para entrenar sus modelos ni para ningún fin propio.
+        </p>
+        <p>
+          Si ese servicio sufre una incidencia, podemos recurrir puntualmente a otro proveedor de IA equivalente,
+          siempre bajo el mismo contrato de tratamiento y para el mismo fin. Añadimos también proveedores de{" "}
+          <strong>alojamiento</strong> (nuestro servidor), <strong>autenticación</strong> y{" "}
+          <strong>diagnóstico de errores</strong>, que no reciben tus fotos.
+        </p>
+        <p>
+          Algunos de estos proveedores pueden tratar datos <strong>fuera del Espacio Económico Europeo</strong>; en ese
+          caso la transferencia se ampara en las cláusulas contractuales tipo de la Comisión Europea. No vendemos ni
+          cedemos tus datos con fines comerciales, ni creamos perfiles para terceros.
         </p>
 
         <h2 id="conservacion">5. Cuánto tiempo los conservamos</h2>
@@ -112,7 +131,8 @@ export default function PrivacidadPage() {
           <li>
             <strong>Tu foto de cuerpo entero y tus resultados:</strong> los conservamos el tiempo necesario para
             prestarte el servicio —poder generar tus probadores y volver a mostrártelos sin repetir el proceso—. Los
-            borras cuando quieras desde la app y se eliminan.
+            borras cuando quieras desde la app y se eliminan. Tu foto de cuerpo, además, solo vive en memoria del
+            servidor mientras la usas y se descarta sola a las pocas horas de inactividad: nunca se guarda en disco.
           </li>
           <li>
             <strong>Datos locales (armario, looks, calendario):</strong> viven en tu dispositivo hasta que los borras o
@@ -127,9 +147,10 @@ export default function PrivacidadPage() {
         </p>
         <ul>
           <li>
-            <strong>Borrar todos tus datos:</strong> desde la propia app, con el botón <em>“Borrar mis datos”</em> (en
-            la barra superior). Elimina tus datos del servidor y también los locales del dispositivo. Es inmediato e
-            irreversible.
+            <strong>Borrar tu cuenta y todos tus datos:</strong> desde la propia app, con el botón{" "}
+            <em>“Borrar mi cuenta y mis datos”</em> (en tu perfil). Elimina tu cuenta, tus datos del servidor —incluida
+            tu foto de cuerpo— y también los locales del dispositivo. Es inmediato e irreversible, y no hace falta que
+            nos escribas.
           </li>
           <li>
             <strong>Acceso y portabilidad:</strong> escríbenos a <a href="mailto:dev.proova@gmail.com">dev.proova@gmail.com</a> y
